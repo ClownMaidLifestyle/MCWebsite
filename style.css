@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+
+header{
+    background-color:gray;
+    color:azure;
+    padding: 10px
+}
+
+nav{
+    padding: 5px;
+    text-align: center;
+}
+
+h1{
+    color: aliceblue;
+    text-align:center;
+}
+
+p{
+    color:aliceblue;
+    text-align: center;
+}
+
+footer{
+    color:aliceblue;
+}
