@@ -9,7 +9,6 @@ header{
 }
 
 nav{
-    padding: 5px;
     text-align: center;
 }
 
@@ -23,8 +22,9 @@ p{
 
 footer{
     color:black;
+    text-align: left;
+    
 }
-
 #darkmodebutton{
     background:none;
     margin:none;
@@ -40,6 +40,10 @@ footer{
     color:aliceblue;
 }
 
-#buttonday{}
+.button{
+    margin:auto;
+    width: 33%;
+}
+
 
 
