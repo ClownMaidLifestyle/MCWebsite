@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 header{
@@ -14,15 +14,19 @@ nav{
 }
 
 h1{
-    color: aliceblue;
     text-align:center;
 }
 
 p{
-    color:aliceblue;
     text-align: center;
 }
 
 footer{
+    color:black;
+}
+
+.dark-mode {
+    background-color: black;
     color:aliceblue;
 }
+
