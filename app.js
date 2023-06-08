@@ -11,10 +11,12 @@ function darkMode() {
     if (isDay == true){
         document.getElementById("buttonimage").src="images/button-night.png";
         isDay = false;
+        document.getElementsByClassName("button").style.borderColor="white";
     }
     else{
         document.getElementById("buttonimage").src="images/button-day.png";
         isDay = true;
+        document.getElementsByClassName("button").style.borderColor="black";
     }
     
 }
