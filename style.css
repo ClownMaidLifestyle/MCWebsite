@@ -43,7 +43,11 @@ footer{
 .button{
     margin:auto;
     width: 33%;
-}
+    background: none;
+    color:inherit;
+    border-top:none;
+    border-bottom:none;
 
+}
 
 
