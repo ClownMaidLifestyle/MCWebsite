@@ -6,7 +6,7 @@ const images = ["images/internationalsummit.png","images/basilica.png","images/m
 function initialise() {
     isDay = true;
     slide = 0;
-    setInterval(showDivs(), 2000);
+    showDivs()
 }
 
 function darkMode() {
@@ -31,7 +31,8 @@ function showDivs(){
         slide++
         if(slide == 4){
             slide = 0;
-    }
+        }
+        setTimeout(showDivs,2000);
 }
 
 
