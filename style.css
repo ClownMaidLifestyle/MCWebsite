@@ -60,4 +60,6 @@ footer{
 }
 #slideshow{
     width:100%;
+    max-width: 1786px;
+    max-height:852px;
 }
