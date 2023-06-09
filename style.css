@@ -34,6 +34,9 @@ footer{
     
 
 }
+#darkmodebutton:hover{
+    cursor:pointer;
+}
 
 .dark-mode {
     background-color: black;
