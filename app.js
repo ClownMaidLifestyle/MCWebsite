@@ -1,7 +1,12 @@
-let isDay
+let isDay;
+let slide = 0;
+const images = ["images/internationalsummit.png","images/basilica.png","images/mushroomtown.png","images/nationalPark.png"];
+
 
 function initialise() {
     isDay = true;
+    slide = 0;
+    setInterval(showDivs(), 2000);
 }
 
 function darkMode() {
@@ -21,3 +26,31 @@ function darkMode() {
     
 }
 
+function showDivs(){
+        document.getElementById("slideshow").src=images[slide];
+        slide++
+        if(slide == 4){
+            slide = 0;
+    }
+}
+
+
+/*    let x;
+    let imageDivs;
+    imageDivs = document.querySelectorAll(".slideshow");
+    for(let i = 0; i = imageDivs.length; i++){
+        if (i == slide){
+            imageDivs[i].style.display = "block";
+            console.log(i)
+        }
+        else{
+            imageDivs[i].style.display = "none";
+            console.log("I have hidden an image");
+        }
+    }
+    
+    slide++;
+    if (slide == 4){
+        slide = 0;
+    }
+    console.log("I am running"); */

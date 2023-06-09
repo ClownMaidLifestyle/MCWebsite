@@ -5,7 +5,8 @@ body{
 header{
     background-color:gray;
     color:azure;
-    padding: 10px
+    padding: 10px;
+    
 }
 
 nav{
@@ -57,4 +58,6 @@ footer{
     background-color: darkgray;
     cursor:pointer;
 }
-
+#slideshow{
+    width:100%;
+}
