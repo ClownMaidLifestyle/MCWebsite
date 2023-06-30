@@ -52,7 +52,7 @@ footer{
     border-top:none;
     border-bottom:none;
     padding:0;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 .button:hover {
     background-color: darkgray;
@@ -61,5 +61,5 @@ footer{
 #slideshow{
     width:100%;
     max-width: 1786px;
-    max-height:852px;
+    height: 400px;
 }

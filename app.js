@@ -32,7 +32,7 @@ function showDivs(){
         if(slide == 4){
             slide = 0;
         }
-        setTimeout(showDivs,2000);
+        setTimeout(showDivs,5000);
 }
 
 
