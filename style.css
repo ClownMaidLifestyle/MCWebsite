@@ -8,6 +8,12 @@ header{
     padding: 10px;
     
 }
+#splashText{
+    color:yellow;
+    display: flex;
+    position:relative;
+    
+}
 
 nav{
     text-align: center;

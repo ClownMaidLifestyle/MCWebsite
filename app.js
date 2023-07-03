@@ -14,7 +14,7 @@ function initialise() {
     } 
     else{
         darkModeToggle.classList.add("dark-mode");
-        if (darkmodenonIndex != null){
+        if (darkmodenonIndex[0] != null){
             darkmodenonIndex[0].classList.add("dark-mode");
             darkmodenonIndex[1].classList.add("dark-mode");
         }
@@ -28,7 +28,8 @@ function darkMode() {
     if (isDay == true){
         document.getElementById("buttonimage").src="images/button-night.png";
         darkModeToggle.classList.add("dark-mode");
-        if (darkmodenonIndex != null){
+        console.log(darkmodenonIndex);
+        if (darkmodenonIndex[0] != null){
             darkmodenonIndex[0].classList.add("dark-mode");
             darkmodenonIndex[1].classList.add("dark-mode");
         }
@@ -37,7 +38,7 @@ function darkMode() {
     else{
         document.getElementById("buttonimage").src="images/button-day.png";
         darkModeToggle.classList.remove("dark-mode");
-        if (darkmodenonIndex != null){
+        if (darkmodenonIndex[0] != null){
             darkmodenonIndex[0].classList.remove("dark-mode");
             darkmodenonIndex[1].classList.remove("dark-mode");
         }
