@@ -24,7 +24,9 @@ const splashContent = ["Server now 50% less broken!",
                     "Sleep or Disconnect!",
                     "BREAK YOUR BOATS!",
                     "Marty lives!",
-                    "Loading Bamboo Spirits..."];
+                    "Loading Bamboo Spirits...",
+                    "Rails & Sails!",
+                    "Where mobs teleport behind you!"];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
