@@ -1,6 +1,7 @@
 let isDay;
 let slide = 0;
 let darkModeToggle = document.body;
+let darkmodenonIndex = document.getElementById("non-indexMain");
 
 const images = ["images/internationalsummit.png","images/basilica.png","images/mushroomtown.png","images/nationalPark.png"];
 
@@ -13,6 +14,9 @@ function initialise() {
     } 
     else{
         darkModeToggle.classList.add("dark-mode");
+        if (darkmodenonIndex != null){
+            darkmodenonIndex.classList.add("dark-mode");
+        }
         isDay = false;
     }
     showDivs();
@@ -23,11 +27,17 @@ function darkMode() {
     if (isDay == true){
         document.getElementById("buttonimage").src="images/button-night.png";
         darkModeToggle.classList.add("dark-mode");
+        if (darkmodenonIndex != null){
+            darkmodenonIndex.classList.add("dark-mode");
+        }
         isDay = false;
     }
     else{
         document.getElementById("buttonimage").src="images/button-day.png";
         darkModeToggle.classList.remove("dark-mode");
+        if (darkmodenonIndex != null){
+            darkmodenonIndex.classList.remove("dark-mode");
+        }
         isDay = true;
     }
     
@@ -35,13 +45,16 @@ function darkMode() {
 }
 
 function showDivs(){
+    if (document.getElementById("slideshow") != null){
         document.getElementById("slideshow").src=images[slide];
         slide++
         if(slide == 4){
             slide = 0;
         }
         setTimeout(showDivs,5000);
+    }
 }
+
 
 
 /*    let x;

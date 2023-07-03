@@ -1,0 +1,86 @@
+body{
+
+    background-image: url("./images/background.png");
+}
+
+header{
+    background-color:gray;
+    color:azure;
+    padding-bottom: 10px;
+}
+
+main{
+    align-self: center;
+    text-align: center;
+    width:70%;
+    margin:auto;
+    bottom:auto;
+    padding:10px;
+    height:1000px;
+}
+
+#clunkypageheightsolution{
+    
+}
+
+nav{
+    text-align: center;
+    background-color: antiquewhite;
+    padding-top: 10px;
+}
+
+h1{
+    text-align:center;
+}
+
+p{
+    text-align: center;
+}
+
+footer{
+    color:black;
+    text-align: left;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    background-color: bisque;
+}
+#darkmodebutton{
+    background:none;
+    margin:none;
+    border-color:none;
+    border:none;
+    float:right;
+    
+
+}
+#darkmodebutton:hover{
+    cursor:pointer;
+}
+
+.dark-mode {
+    background-color: black;
+    color:aliceblue;
+}
+
+.button{
+    margin:auto;
+    width: 33%;
+    background: none;
+    color:inherit;
+    border-top:none;
+    border-bottom:none;
+    padding:0;
+    transition-duration: 0.5s;
+}
+.button:hover {
+    background-color: darkgray;
+    cursor:pointer;
+}
+#slideshow{
+    border-color:black;
+    border-radius: 5%;
+    width:100%;
+    max-width: 1786px;
+    height: 50%
+}
