@@ -1,5 +1,4 @@
 body{
-
     background-image: url("./images/background.png");
 }
 
@@ -17,10 +16,7 @@ main{
     bottom:auto;
     padding:10px;
     height:1000px;
-}
-
-#clunkypageheightsolution{
-    
+    background-color: antiquewhite;
 }
 
 nav{
