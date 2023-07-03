@@ -10,10 +10,10 @@ header{
 }
 #splashText{
     color:yellow;
-    display: flex;
-    position:relative;
-    left:80%;
-    top:-30px;
+    display:inline-flex;
+    position:absolute;
+    right:32%;
+    top:12%;
     animation-name: splashAnimations;
     animation-duration: 3s;
     animation-iteration-count: 999;

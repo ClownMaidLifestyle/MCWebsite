@@ -4,7 +4,16 @@ let darkModeToggle = document.body;
 let darkmodenonIndex = document.getElementsByClassName("non-indexMain");
 
 const images = ["images/internationalsummit.png","images/basilica.png","images/mushroomtown.png","images/nationalPark.png"];
-
+const splashContent = ["Server now 50% less broken!",
+                    "Visit Mushroom Mountain!",
+                    "Visit the National Park!",
+                    "BSRC!",
+                    "Try the webcomic 'pragmatist'!",
+                    "100% Fairycore!",
+                    "Is it pronounced 'Kignee'???",
+                    "General Lazy!",
+                    "Is this abandoned?",
+                    "kidney.",];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
@@ -21,6 +30,10 @@ function initialise() {
         isDay = false;
     }
     showDivs();
+}
+
+function splashTextInit(){
+
 }
 
 function darkMode() {
