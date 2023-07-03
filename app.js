@@ -13,7 +13,9 @@ const splashContent = ["Server now 50% less broken!",
                     "Is it pronounced 'Kignee'???",
                     "General Lazy!",
                     "Is this abandoned?",
-                    "kidney.",];
+                    "kidney!",
+                    "Pet your dog!",
+                    "Also try 'Mount and Blade'!",];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
@@ -33,7 +35,13 @@ function initialise() {
 }
 
 function splashTextInit(){
-
+    console.log("yuh");
+    let splash = document.getElementById("splashText");
+    let splashIndex = parseInt((Math.random() * splashContent.length -1) + 1);
+    console.log(splashIndex);
+    let newSplash =document.createElement("article");
+    newSplash.textContent=splashContent[splashIndex];
+    splash.textContent = (splashContent[splashIndex]);
 }
 
 function darkMode() {
