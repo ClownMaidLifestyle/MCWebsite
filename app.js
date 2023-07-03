@@ -7,7 +7,7 @@ const images = ["images/internationalsummit.png","images/basilica.png","images/m
 const splashContent = ["Server now 50% less broken!",
                     "Visit Mushroom Mountain!",
                     "Visit the National Park!",
-                    "BSRC!",
+                    "BSRC approved!",
                     "Try the webcomic 'pragmatist'!",
                     "100% Fairycore!",
                     "Is it pronounced 'Kignee'???",
@@ -15,7 +15,11 @@ const splashContent = ["Server now 50% less broken!",
                     "Is this abandoned?",
                     "kidney!",
                     "Pet your dog!",
-                    "Also try 'Mount and Blade'!",];
+                    "Also try 'Mount and Blade'!",
+                    "Try Tech Educators!",
+                    "DIY or Die!",
+                    "Bedrock players complain less!",
+                    "We love Cheese boy!"];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
