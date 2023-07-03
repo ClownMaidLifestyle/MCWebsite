@@ -59,6 +59,8 @@ footer{
     cursor:pointer;
 }
 #slideshow{
+    border-color:black;
+    border-radius: 5%;
     width:100%;
     max-width: 1786px;
     height: 50%
