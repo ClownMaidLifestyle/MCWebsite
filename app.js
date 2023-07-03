@@ -4,7 +4,27 @@ let darkModeToggle = document.body;
 let darkmodenonIndex = document.getElementsByClassName("non-indexMain");
 
 const images = ["images/internationalsummit.png","images/basilica.png","images/mushroomtown.png","images/nationalPark.png"];
-
+const splashContent = ["Server now 50% less broken!",
+                    "Visit Mushroom Mountain!",
+                    "Visit the National Park!",
+                    "BSRC approved!",
+                    "Try the webcomic 'pragmatist'!",
+                    "100% Fairycore!",
+                    "Is it pronounced 'Kignee'???",
+                    "General Lazy!",
+                    "Is this abandoned?",
+                    "kidney!",
+                    "Pet your dog!",
+                    "Also try 'Mount and Blade'!",
+                    "Try Tech Educators!",
+                    "DIY or Die!",
+                    "Bedrock players complain less!",
+                    "We love Cheese Man!",
+                    "Clown Girl was here!",
+                    "Sleep or Disconnect!",
+                    "BREAK YOUR BOATS!",
+                    "Marty lives!",
+                    "Loading Bamboo Spirits..."];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
@@ -21,6 +41,16 @@ function initialise() {
         isDay = false;
     }
     showDivs();
+}
+
+function splashTextInit(){
+    console.log("yuh");
+    let splash = document.getElementById("splashText");
+    let splashIndex = parseInt((Math.random() * splashContent.length -1) + 1);
+    console.log(splashIndex);
+    let newSplash =document.createElement("article");
+    newSplash.textContent=splashContent[splashIndex];
+    splash.textContent = (splashContent[splashIndex]);
 }
 
 function darkMode() {
