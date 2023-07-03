@@ -12,7 +12,25 @@ header{
     color:yellow;
     display: flex;
     position:relative;
-    
+    left:80%;
+    top:-30px;
+    animation-name: splashAnimations;
+    animation-duration: 3s;
+    animation-iteration-count: 999;
+}
+
+@keyframes splashAnimations{
+    0%{
+        font-size: 1.1rem;
+        transform: rotate(-4deg);
+    }
+    50%{
+        font-size: 1.2rem;
+    }
+    100%{
+        font-size: 1.1rem;
+        transform: rotate(-4deg);
+    }
 }
 
 nav{
