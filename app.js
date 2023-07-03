@@ -19,7 +19,12 @@ const splashContent = ["Server now 50% less broken!",
                     "Try Tech Educators!",
                     "DIY or Die!",
                     "Bedrock players complain less!",
-                    "We love Cheese boy!"];
+                    "We love Cheese Man!",
+                    "Clown Girl was here!",
+                    "Sleep or Disconnect!",
+                    "BREAK YOUR BOATS!",
+                    "Marty lives!",
+                    "Loading Bamboo Spirits..."];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
