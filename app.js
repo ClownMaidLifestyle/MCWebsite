@@ -1,29 +1,37 @@
 let isDay;
 let slide = 0;
+let darkModeToggle = document.body;
+
 const images = ["images/internationalsummit.png","images/basilica.png","images/mushroomtown.png","images/nationalPark.png"];
 
 
 function initialise() {
-    isDay = true;
-    slide = 0;
-    showDivs()
+    let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
+    console.log(retrieveisDay);
+    if (retrieveisDay == true){
+        isDay = true;
+    } 
+    else{
+        darkModeToggle.classList.add("dark-mode");
+        isDay = false;
+    }
+    showDivs();
 }
 
 function darkMode() {
-    let darkModeToggle = document.body;
-    darkModeToggle.classList.toggle("dark-mode");
 
     if (isDay == true){
         document.getElementById("buttonimage").src="images/button-night.png";
+        darkModeToggle.classList.add("dark-mode");
         isDay = false;
-        document.getElementsByClassName("button").style.borderColor="white";
     }
     else{
         document.getElementById("buttonimage").src="images/button-day.png";
+        darkModeToggle.classList.remove("dark-mode");
         isDay = true;
-        document.getElementsByClassName("button").style.borderColor="black";
     }
     
+    localStorage.setItem(`isday`, isDay);
 }
 
 function showDivs(){
