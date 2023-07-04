@@ -46,7 +46,7 @@ function initialise() {
 }
 
 function splashTextInit(){
-    let lastIndex = JSON.parse(localStorage.getItem("isDay"));
+    let lastIndex = parseInt(JSON.parse(localStorage.getItem("isDay")));
     console.log(lastIndex);
     
     let splash = document.getElementById("splashText");
