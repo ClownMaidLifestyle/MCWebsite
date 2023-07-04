@@ -46,13 +46,22 @@ function initialise() {
 }
 
 function splashTextInit(){
-    console.log("yuh");
+    let lastIndex = JSON.parse(localStorage.getItem("isDay"));
+    console.log(lastIndex);
+    
     let splash = document.getElementById("splashText");
+
+    
     let splashIndex = parseInt((Math.random() * splashContent.length -1) + 1);
-    console.log(splashIndex);
+    while(splashIndex == lastIndex){
+        splashIndex = parseInt((Math.random() * splashContent.length -1) + 1);
+    }
+
     let newSplash =document.createElement("article");
     newSplash.textContent=splashContent[splashIndex];
     splash.textContent = (splashContent[splashIndex]);
+
+    localStorage.setItem('lastIndex', splashIndex);
 }
 
 function darkMode() {
