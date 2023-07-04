@@ -83,10 +83,22 @@ footer{
     background-color: darkgray;
     cursor:pointer;
 }
+
+#slideshowContainer{
+    position: relative;
+}
+
 #slideshow{
     border-color:black;
     border-radius: 5%;
     width:100%;
     max-width: 1786px;
     height: 50%
+}
+
+#slideshowCaption{
+    position: absolute;
+    right:45%;
+    bottom:5%;
+    text-align:center;
 }

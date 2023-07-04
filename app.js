@@ -4,6 +4,8 @@ let darkModeToggle = document.body;
 let darkmodenonIndex = document.getElementsByClassName("non-indexMain");
 
 const images = ["images/internationalsummit.png","images/basilica.png","images/mushroomtown.png","images/nationalPark.png"];
+const imageCaptions = ["The international summit", "The Shelmouth Basilica", "Mushroom town", "Bamboo Shogunate National Park"];
+
 const splashContent = ["Server now 50% less broken!",
                     "Visit Mushroom Mountain!",
                     "Visit the National Park!",
@@ -92,10 +94,16 @@ function darkMode() {
 function showDivs(){
     if (document.getElementById("slideshow") != null){
         document.getElementById("slideshow").src=images[slide];
+        let caption = document.getElementById("slideshowCaption");
+        let newCaption = imageCaptions[slide];
+        caption.textContent = newCaption;
         slide++
         if(slide == 4){
             slide = 0;
         }
+
+        
+
         setTimeout(showDivs,5000);
     }
 }
