@@ -97,6 +97,16 @@ footer{
 }
 
 #slideshowCaption{
+    opacity: 0;
+    position: absolute;
+    right:45%;
+    bottom:5%;
+    text-align:center;
+    transition:0.3s;
+}
+
+#slideshow:hover ~ article{
+    opacity:1;
     position: absolute;
     right:45%;
     bottom:5%;

@@ -97,6 +97,7 @@ function showDivs(){
         let caption = document.getElementById("slideshowCaption");
         let newCaption = imageCaptions[slide];
         caption.textContent = newCaption;
+        
         slide++
         if(slide == 4){
             slide = 0;
