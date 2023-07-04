@@ -23,12 +23,13 @@ const splashContent = ["Server now 50% less broken!",
                     "Bedrock players complain less!",
                     "We love Cheese Man!",
                     "Clown Girl was here!",
-                    "Sleep or Disconnect!",
+                    "Sleep or DC!",
                     "BREAK YOUR BOATS!",
                     "Marty lives!",
                     "Loading Bamboo Spirits...",
                     "Rails & Sails!",
-                    "Where mobs teleport behind you!"];
+                    "Where mobs teleport behind you!",
+                    "Squatter's rights!"];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
@@ -97,7 +98,7 @@ function showDivs(){
         let caption = document.getElementById("slideshowCaption");
         let newCaption = imageCaptions[slide];
         caption.textContent = newCaption;
-        
+
         slide++
         if(slide == 4){
             slide = 0;
