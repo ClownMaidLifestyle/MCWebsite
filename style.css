@@ -93,7 +93,7 @@ footer{
     border-radius: 5%;
     width:100%;
     max-width: 1786px;
-    height: 50%
+    height: 50%;
 }
 
 #slideshowCaption{
@@ -108,7 +108,6 @@ footer{
 #slideshow:hover ~ article{
     opacity:1;
     position: absolute;
-    right:45%;
-    bottom:5%;
-    text-align:center;
+    width:100%;
+    text-align: center;
 }
