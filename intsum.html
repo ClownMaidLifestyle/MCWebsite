@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Circus World</title>
+    <link href="non-indexstyle.css" rel="stylesheet" type="text/css" />
+    <script src="app.js" defer></script>
+</head>
+
+<body onload="initialise()">
+    <header>
+        ☆☆Circus World☆☆
+        <button id="darkmodebutton" onclick="darkMode()"><img id="buttonimage" src="images/button-day.png"></button>
+    </header>
+
+    <nav class="non-indexMain">
+        <button class="button">Nations</button>
+        <button class="button">International Community</button>
+        <button onclick="document.location=`blog.html`" class="button">About me/blog</button>
+    </nav>
+
+    <main class="non-indexMain">
+        <h2>The International Community</h2>
+
+        <h3>How does it work?</h3>
+
+        <div id="blogpost">
+            Individuals or groups of plays with a name, a flag and location may apply for membership in the international community.
+            After joining our ranks, any members may call a meeting at the international summit -all are free to attend but only members may propose resolutions and vote on them.
+            When a resolution passes in the meeting it's written down and voted on further with amendments being proposed until it passes and becomes international law.
+            Particpation is entirely voluntary, mostly for fun and the only requirement is following the resolutions that pass. At the summit, nations get one vote regardless of population but when
+            voting on resolutions afterwards, Every member of a nation gets their own vote.
+        </div>
+
+        <h3>Who are the current members?</h3>
+        <div id="blogpost">
+            <ul>
+                <li>The Bamboo Shogunate</li>
+                <li>The Confederation of Mushroom Grove</li>
+                <li>L'ile de Cygne</li>
+                <li>The Duchy of Schleswig</li>
+            </ul>
+        </div>
+
+        <h3>What are the active resolutions?</h3>
+        <div id="blogpost">
+            <button id="ResolutionButton1">Resolution #0001 - Resolution for Membership Applications of Nations in the International Summit</button>
+            <div id="resolutionContent1">Outlines articles for membership within the international commmunity</div>
+        </div>
+    </main>
+    
+    
+</body>
+
+<footer>
+    <p>this page brought to you by General Lazy</p>
+</footer>
+
+</html>
