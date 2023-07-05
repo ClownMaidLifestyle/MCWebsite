@@ -80,3 +80,12 @@ footer{
     max-width: 1786px;
     height: 50%
 }
+
+.blogpost{
+    border:2px;
+    border-style: solid;
+    border-color: yellow;
+}
+.blogTitle{
+    text-align: left;
+}

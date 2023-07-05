@@ -1,3 +1,5 @@
+"use strict";
+
 let isDay;
 let slide = 0;
 let darkModeToggle = document.body;
