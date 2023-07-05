@@ -10,7 +10,7 @@
     <script src="blog.js" defer></script>
 </head>
 
-<body onload="initialise()">
+<body onload="initialise();blogInit()">
     <header>
         ☆☆Circus World☆☆
         <button id="darkmodebutton" onclick="darkMode()"><img id="buttonimage" src="images/button-day.png"></button>
@@ -28,11 +28,13 @@
         <p>I'm Ellie, I run the day-to-day of the minecraft server and manage this website while my partner Sam fixes it when I break it too badly. We created the server to foster creativity, collaborate on projects and to host a social space
             for people all around the world. If you need to contact me you can do so on discord at flag6551. If you need to contact me with an air of formality you can do so at e.edson@protonmail.ch
         </p>
-
-        <div class="blogpost">
-            <h3 class="blogTitle">Test post -05/07/2023</h3>
-            <p>This post is a test post - this post is testing the aesthetics of these posts</p>
+        <div id="blogContainer">
+            <div class="blogpost">
+                <h3 class="blogTitle">Test post -05/07/2023</h3>
+                <p>This post is a test post - this post is testing the aesthetics of these posts</p>
+            </div>
         </div>
+
     </main>
     
     
