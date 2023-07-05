@@ -31,7 +31,8 @@ const splashContent = ["Server now 50% less broken!",
                     "Loading Bamboo Spirits...",
                     "Rails & Sails!",
                     "Where mobs teleport behind you!",
-                    "Squatter's rights!"];
+                    "Squatter's rights!",
+                    "[DEADSPACE 4 SPLASHTEXT]"];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
