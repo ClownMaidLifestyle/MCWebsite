@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+@font-face{
+    font-family: "LILITA ONE";
+    src: url(LilitaOne-Regular.ttf) format("ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
 body{
     background-color: whitesmoke;
+    font-family: "LILITA ONE";
 }
 
 header{
@@ -20,7 +31,7 @@ header{
     text-align:right;
     animation-name: splashAnimations;
     animation-duration: 3s;
-    animation-iteration-count: 999;
+    animation-iteration-count: infinite;
 }
 
 @keyframes splashAnimations{
