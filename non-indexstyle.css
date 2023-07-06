@@ -100,3 +100,11 @@ footer{
 .blogTitle{
     text-align: left;
 }
+
+.resolutionContent{
+    display:none;
+}
+
+.displayResolutionContent{
+    display:block;
+}
