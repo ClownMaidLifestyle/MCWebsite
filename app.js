@@ -5,7 +5,7 @@ let slide = 0;
 let darkModeToggle = document.body;
 let darkmodenonIndex = document.getElementsByClassName("non-indexMain");
 
-const images = ["images/internationalsummit.png","images/basilica.png","images/mushroomtown.png","images/nationalPark.png"];
+const imageLocations = ["images/internationalsummit.png","images/basilica.png","images/mushroomtown.png","images/nationalPark.png"];
 const imageCaptions = ["The international summit", "The Shelmouth Basilica", "Mushroom town", "Bamboo Shogunate National Park"];
 
 const splashContent = ["Server now 50% less broken!",
@@ -38,7 +38,6 @@ let nations = ["Shogunate"];
 
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
-    console.log(retrieveisDay);
     if (retrieveisDay == true){
         isDay = true;
     } 
@@ -67,7 +66,6 @@ function nationsInit(){
 
 function splashTextInit(){
     let lastIndex = parseInt(JSON.parse(localStorage.getItem("isDay")));
-    console.log(lastIndex);
     
     let splash = document.getElementById("splashText");
 
@@ -77,7 +75,7 @@ function splashTextInit(){
         splashIndex = parseInt((Math.random() * splashContent.length -1) + 1);
     }
 
-    let newSplash =document.createElement("article");
+    let newSplash = document.createElement("article");
     newSplash.textContent=splashContent[splashIndex];
     splash.textContent = (splashContent[splashIndex]);
 
@@ -111,7 +109,7 @@ function darkMode() {
 
 function showDivs(){
     if (document.getElementById("slideshow") != null){
-        document.getElementById("slideshow").src=images[slide];
+        document.getElementById("slideshow").src=imageLocations[slide];
         let caption = document.getElementById("slideshowCaption");
         let newCaption = imageCaptions[slide];
         caption.textContent = newCaption;
@@ -126,25 +124,3 @@ function showDivs(){
         setTimeout(showDivs,5000);
     }
 }
-
-
-
-/*    let x;
-    let imageDivs;
-    imageDivs = document.querySelectorAll(".slideshow");
-    for(let i = 0; i = imageDivs.length; i++){
-        if (i == slide){
-            imageDivs[i].style.display = "block";
-            console.log(i)
-        }
-        else{
-            imageDivs[i].style.display = "none";
-            console.log("I have hidden an image");
-        }
-    }
-    
-    slide++;
-    if (slide == 4){
-        slide = 0;
-    }
-    console.log("I am running"); */
