@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+@font-face{
+    font-family: "LILITA ONE";
+    src: url(LilitaOne-Regular.ttf) format("ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
 body{
     background-color: whitesmoke;
+    font-family: "LILITA ONE";
 }
 
 header{
@@ -17,10 +28,9 @@ header{
     position:absolute;
     right:32%;
     top:12%;
-    text-align:right;
-    animation-name: splashAnimations;
+    text-align:right;    animation-name: splashAnimations;
     animation-duration: 3s;
-    animation-iteration-count: 999;
+    animation-iteration-count: infinite;
 }
 
 @keyframes splashAnimations{
@@ -37,8 +47,33 @@ header{
     }
 }
 
-nav{
+#nav{
+    display: grid;
+    grid-template-columns: 3 33%;
+    grid-template-rows: 1 20px;
     text-align: center;
+    width:100%;
+}
+
+#nationsContainer{
+    grid-column-start: 1; 
+    grid-row-start: 1;
+    width:100%;
+    text-align:center;
+}
+
+#intsumContainer{
+    grid-column-end: 2;
+    grid-row-start: 1;
+    width:100%;
+    text-align:center;
+}
+
+#blogContainer{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    width:100%;
+    text-align:center;
 }
 
 h1{
@@ -72,13 +107,13 @@ footer{
 }
 
 .button{
-    margin:auto;
-    width: 33%;
+    width:100%;
     background: none;
     color:inherit;
     border-top:none;
     border-bottom:none;
-    padding:0;
+    padding:0px;
+    margin:auto;
     transition-duration: 0.5s;
 }
 .button:hover {
@@ -104,6 +139,7 @@ footer{
     right:45%;
     bottom:5%;
     text-align:center;
+    font-size: 1.5rem;
     transition:0.3s;
 }
 
@@ -114,3 +150,14 @@ footer{
     bottom:5%;
     text-align:center;
 }
+
+#nationsDropdown{
+    display: flex;
+    width:100%;
+}
+/*
+.nationButton{
+    position:absolute;
+    top:100%;
+}
+*?

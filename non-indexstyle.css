@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+@font-face{
+    font-family: "LILITA ONE";
+    src: url(LilitaOne-Regular.ttf) format("ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
 body{
     background-image: url("./images/background.png");
+    font-family: "LILITA ONE";
 }
 
 header{
@@ -88,4 +99,12 @@ footer{
 }
 .blogTitle{
     text-align: left;
+}
+
+.resolutionContent{
+    display:none;
+}
+
+.displayResolutionContent{
+    display:block;
 }

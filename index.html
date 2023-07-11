@@ -9,16 +9,24 @@
     <script src="app.js" defer></script>
 </head>
 
-<body onload="initialise();splashTextInit()" >
+<body onload="initialise();splashTextInit();nationsInit()" >
     <header>
         ☆☆Circus World☆☆
         <button id="darkmodebutton" onclick="darkMode()"><img id="buttonimage" src="images/button-day.png"></button>
     </header>
 
-    <nav>
-        <button  class="button">Nations</button>
-        <button class="button">International Community</button>
-        <button onclick="document.location=`blog.html`"class="button">About me/blog</button>
+    <nav id="nav">
+        <div id="nationsContainer"></div>
+            <button class="button">Nations</button>
+            <div id="nationsDropdown">
+            </div>
+        </div>
+        <div id="intsumContainer">
+            <button onclick="document.location=`intsum.html`" class="button">International Community</button>
+        </div>
+        <div id="blogContainer">
+            <button onclick="document.location=`blog.html`"class="button">About me/blog</button>
+        </div>
     </nav>
 
     <h1>Circus World Bedrock Minecraft</h1>

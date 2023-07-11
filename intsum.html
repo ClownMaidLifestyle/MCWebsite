@@ -7,6 +7,7 @@
     <title>Circus World</title>
     <link href="non-indexstyle.css" rel="stylesheet" type="text/css" />
     <script src="app.js" defer></script>
+    <script src="resolutions.js" defer></script>
 </head>
 
 <body onload="initialise()">
@@ -16,8 +17,8 @@
     </header>
 
     <nav class="non-indexMain">
-        <button class="button">Nations</button>
-        <button class="button">International Community</button>
+        <button class="button" id="nationsDropdown">Nations</button>
+        <button onclick="document.location=`intsum.html`" class="button">International Community</button>
         <button onclick="document.location=`blog.html`" class="button">About me/blog</button>
     </nav>
 
@@ -27,7 +28,7 @@
         <h3>How does it work?</h3>
 
         <div id="blogpost">
-            Individuals or groups of plays with a name, a flag and location may apply for membership in the international community.
+            Individuals or groups of players with a name, a flag and location may apply for membership in the international community.
             After joining our ranks, any members may call a meeting at the international summit -all are free to attend but only members may propose resolutions and vote on them.
             When a resolution passes in the meeting it's written down and voted on further with amendments being proposed until it passes and becomes international law.
             Particpation is entirely voluntary, mostly for fun and the only requirement is following the resolutions that pass. At the summit, nations get one vote regardless of population but when
@@ -45,10 +46,37 @@
         </div>
 
         <h3>What are the active resolutions?</h3>
+
         <div id="blogpost">
-            <button id="ResolutionButton1">Resolution #0001 - Resolution for Membership Applications of Nations in the International Summit</button>
-            <div id="resolutionContent1">Outlines articles for membership within the international commmunity</div>
+            <button class="resolutionButton">Resolution #0001 - Resolution for Membership Applications of Nations in the International Summit</button>
+            <div class="resolutionContent">Outlines articles for membership within the international commmunity</div>
         </div>
+
+        <div id="blogpost">
+            <button class="resolutionButton">Resolution #0002 - Resolution for the protection of the Waterways</button>
+            <div class="resolutionContent">Designates certain rivers as significant for travel or beauty and determines that no individual or nation can obstruct boat travel on them</div>
+        </div>
+
+        <div id="blogpost">
+            <button class="resolutionButton">Resolution #0003 - Resolution for the protection of Internationally Significant Documents</button>
+            <div class="resolutionContent">Designates the grand library at mushroom mountain as a seconday storage location for documents deemed internationally significant and mandates their copying</div>
+        </div>
+
+        <div id="blogpost">
+            <button class="resolutionButton">Resolution #0004 - Resolution for the institution of cartography stations</button>
+            <div class="resolutionContent">Insitutes maps across a wide area around spawn for easy updating of a big map in the National Park - ensures free access to those maps for all members</div>
+        </div>
+
+        <div id="blogpost">
+            <button class="resolutionButton">Resolution #0005 - Resolution for protocols in the case of conflicting nether portals</button>
+            <div class="resolutionContent">Creates protocols in cases where people's nether portals aren't discreetly separated on either end</div>
+        </div>
+
+        <div id="blogpost">
+            <button class="resolutionButton">Resolution #0006 - Resolution for safeguarding of the international summit</button>
+            <div class="resolutionContent">Mandates better lighting around the international summit to protect it's visitors</div>
+        </div>
+
     </main>
     
     
