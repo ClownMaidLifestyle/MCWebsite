@@ -34,6 +34,8 @@ const splashContent = ["Server now 50% less broken!",
                     "Squatter's rights!",
                     "[DEADSPACE 4 SPLASHTEXT]"];
 
+let nations = ["Shogunate"];
+
 function initialise() {
     let retrieveisDay = JSON.parse(localStorage.getItem("isday"));
     console.log(retrieveisDay);
@@ -50,6 +52,17 @@ function initialise() {
     }
     showDivs();
 }
+/*
+function nationsInit(){
+    let nationsTab = document.getElementById("nationsDropdown");
+    for (let i = 0; i < nations.length; i++){
+        let nationButton = document.createElement("button");
+        nationButton.setAttribute("onClick", "document.location=`${nations[i]}.html`");
+        nationButton.setAttribute("class","nationButton")
+        nationButton.textContent = nations[i];
+        nationsTab.appendChild(nationButton);
+    }
+}*/
 
 function splashTextInit(){
     let lastIndex = parseInt(JSON.parse(localStorage.getItem("isDay")));
