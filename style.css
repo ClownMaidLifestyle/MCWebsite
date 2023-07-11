@@ -48,7 +48,7 @@ header{
 }
 
 #nav{
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 3 33%;
     grid-template-rows: 1 20px;
     text-align: center;
@@ -107,14 +107,13 @@ footer{
 }
 
 .button{
-    display:flex;
     width:100%;
     background: none;
     color:inherit;
     border-top:none;
     border-bottom:none;
     padding:0px;
-    margin:0px;
+    margin:auto;
     transition-duration: 0.5s;
 }
 .button:hover {
