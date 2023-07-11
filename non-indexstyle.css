@@ -30,10 +30,34 @@ main{
     background-color: antiquewhite;
 }
 
-nav{
+#nav{
+    display: grid;
+    grid-template-columns: 3 33%;
+    grid-template-rows: 1 20px;
     text-align: center;
+    width:100%;
     background-color: antiquewhite;
-    padding-top: 10px;
+}
+
+#nationsContainer{
+    grid-column-start: 1; 
+    grid-row-start: 1;
+    width:100%;
+    text-align:center;
+}
+
+#intsumContainer{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width:100%;
+    text-align:center;
+}
+
+#blogContainer{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    width:100%;
+    text-align:center;
 }
 
 h1{
@@ -72,7 +96,7 @@ footer{
 
 .button{
     margin:auto;
-    width: 33%;
+    width: 100%;
     background: none;
     color:inherit;
     border-top:none;

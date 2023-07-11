@@ -16,10 +16,19 @@
         <button id="darkmodebutton" onclick="darkMode()"><img id="buttonimage" src="images/button-day.png"></button>
     </header>
 
-    <nav class="non-indexMain">
-        <button class="button">Nations</button>
-        <button onclick="document.location=`intsum.html`" class="button">International Community</button>
-        <button onclick="document.location=`blog.html`" class="button">About me/blog</button>
+    <nav id="nav">
+        <div id="nationsContainer">
+            <button class="button">Nations</button>
+            </div>
+            <div id="nationsDropdown"></div>
+        </div>
+        </div>
+        <div id="intsumContainer">
+            <button onclick="document.location=`intsum.html`" class="button">International Community</button>
+        </div>
+        <div id="blogContainer">
+            <button onclick="document.location=`blog.html`"class="button">About me/blog</button>
+        </div>
     </nav>
 
     <main class="non-indexMain">
@@ -28,7 +37,7 @@
         <p>I'm Ellie, I run the day-to-day of the minecraft server and manage this website while my partner Sam fixes it when I break it too badly. We created the server to foster creativity, collaborate on projects and to host a social space
             for people all around the world. If you need to contact me you can do so on discord at flag6551. If you need to contact me with an air of formality you can do so at e.edson@protonmail.ch
         </p>
-        <div id="blogContainer">
+        <div id="blogPostContainer">
             <div class="blogpost">
                 <h3 class="blogTitle">Test post -05/07/2023</h3>
                 <p>This post is a test post - this post is testing the aesthetics of these posts</p>

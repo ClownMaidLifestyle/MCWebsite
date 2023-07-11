@@ -15,10 +15,19 @@
         <button id="darkmodebutton" onclick="darkMode()"><img id="buttonimage" src="images/button-day.png"></button>
     </header>
 
-    <nav class="non-indexMain">
-        <button class="button">Nations</button>
-        <button onclick="document.location=`intsum.html`" class="button">International Community</button>
-        <button onclick="document.location=`blog.html`" class="button">About me/blog</button>
+    <nav id="nav">
+        <div id="nationsContainer">
+            <button class="button">Nations</button>
+            </div>
+            <div id="nationsDropdown"></div>
+        </div>
+        </div>
+        <div id="intsumContainer">
+            <button onclick="document.location=`intsum.html`" class="button">International Community</button>
+        </div>
+        <div id="blogContainer">
+            <button onclick="document.location=`blog.html`"class="button">About me/blog</button>
+        </div>
     </nav>
 
     <main class="non-indexMain">

@@ -12,7 +12,7 @@ function BlogObject(postTitle, postContent){
 }
 
 BlogObject.prototype.render = function(){
-    const blogContainer = document.getElementById("blogContainer");
+    const blogContainer = document.getElementById("blogPostContainer");
 
     const newBlogpost = document.createElement("div");
     newBlogpost.setAttribute("class","blogpost");
