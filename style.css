@@ -63,7 +63,7 @@ header{
 }
 
 #intsumContainer{
-    grid-column-end: 2;
+    grid-column-start: 2;
     grid-row-start: 1;
     width:100%;
     text-align:center;
@@ -155,9 +155,8 @@ footer{
     display: flex;
     width:100%;
 }
-/*
+
 .nationButton{
     position:absolute;
     top:100%;
 }
-*?

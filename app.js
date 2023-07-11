@@ -52,7 +52,8 @@ function initialise() {
     }
     showDivs();
 }
-/*
+
+
 function nationsInit(){
     let nationsTab = document.getElementById("nationsDropdown");
     for (let i = 0; i < nations.length; i++){
@@ -62,7 +63,7 @@ function nationsInit(){
         nationButton.textContent = nations[i];
         nationsTab.appendChild(nationButton);
     }
-}*/
+}
 
 function splashTextInit(){
     let lastIndex = parseInt(JSON.parse(localStorage.getItem("isDay")));
